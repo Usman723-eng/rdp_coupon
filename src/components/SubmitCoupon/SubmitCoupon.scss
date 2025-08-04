@@ -1,0 +1,116 @@
+@import '../../common-styles/variable.scss';
+
+
+.submit_coupon_main {
+    margin: 128px 0;
+
+    .container {
+        .row_coupon {
+            gap: 72px 0;
+
+            .col_form_otr {
+                .col_form_inr {
+                    .form_main {
+                        margin-bottom: 72px;
+
+                        .input_otr {
+                            display: flex;
+                            align-items: flex-start;
+                            justify-content: flex-start;
+                            flex-direction: column;
+                            margin-bottom: 24px;
+                            gap: 8px;
+
+                            .label {
+                                color: $Primary-color;
+                            }
+
+                            .input {
+                                width: 100%;
+
+                                &::placeholder {
+                                    color: $Gray-Shade-2;
+                                }
+
+                                &:focus {
+                                    outline: none;
+                                }
+                            }
+
+                            .textarea {
+                                height: 110px;
+                                resize: none;
+                            }
+                        }
+
+                        .last_input {
+                            margin-bottom: 40px;
+                        }
+
+                        .action_otr {
+                            display: flex;
+
+                            .button {
+                                width: 50%;
+                            }
+                        }
+                    }
+                }
+
+                .faq_inr {
+                    .head_faq {
+                        color: $Primary-color;
+                        margin: 0 0 16px 0;
+                    }
+
+                    .faqs_main {
+                        .faq {
+                            &:not(:last-child) {
+                                margin-bottom: 24px;
+                            }
+
+                            .heading_faq {
+                                color: $Gray-Shade-1;
+                                margin: 0 0 12px 0;
+                            }
+
+                            .desc {
+                                color: $Gray-Shade-2;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .col_logo_otr {
+                .logo_ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                }
+
+                .logo_linkk {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 20px;
+                    height: 120px;
+                    border: 1px solid #CFCFCF;
+                    background-color: #fff;
+                    transition: .3s;
+
+                    &:hover {
+                        box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.1);
+                    }
+                }
+
+                .logo_img {
+                    width: 150px;
+                    height: 100%;
+                    object-fit: contain;
+                    object-position: center;
+                }
+            }
+        }
+    }
+}

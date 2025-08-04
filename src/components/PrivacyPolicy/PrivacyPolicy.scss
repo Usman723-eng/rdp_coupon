@@ -1,0 +1,36 @@
+@import '../../common-styles/variable.scss';
+
+.PrivacyPolicy_main {}
+
+.ContentSection_main {
+    margin: 128px 0;
+
+    .container {
+        .wrapper {
+            .para {
+                font-size: $font-size-S;
+                line-height: $line-height-S;
+                font-family: $font-family-Medium;
+                font-weight: 500;
+                color: $Gray-Shade-2;
+
+                .link {
+                    display: inline;
+                    color: $Primary-color;
+                }
+            }
+
+            .pb {
+                margin-bottom: 16px;
+            }
+
+            .heading {
+                font-size: $font-size-h2;
+                line-height: $line-height-h2;
+                font-family: $font-family-Bold;
+                color: $Primary-color;
+                margin: 32px 0 16px 0;
+            }
+        }
+    }
+}

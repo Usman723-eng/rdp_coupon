@@ -1,0 +1,106 @@
+@import '../../common-styles/variable.scss';
+
+.CategoryPage_main {
+    .CategorySection_main {
+        margin: 128px 0;
+
+        .container {
+            .row_category {
+                @media (max-width: 992px) {
+                    flex-direction: column-reverse;
+                }
+
+                .col_sidebar_otr {
+                    .col_sidebar_inr {
+                        padding: 0 40px 0 0;
+
+                        @media (max-width: 992px) {
+                            padding: 0;
+                        }
+
+                        .categories_box {
+                            margin: 0;
+                        }
+                    }
+                }
+
+                .col_box_main_otr {
+                    .box_main_inr {
+                        @media (max-width: 992px) {
+                            margin-bottom: 72px;
+                        }
+
+                        .heading_select_otr {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            margin-bottom: 48px;
+
+                            @media (max-width: 450px) {
+                                flex-direction: column;
+                                gap: 16px;
+                            }
+
+                            .cards_heading {
+                                color: $Primary-color;
+                                flex: 1;
+                            }
+
+                            .filter_otr {
+                                display: flex;
+                                align-items: center;
+                                gap: 12px;
+
+                                .filter_text {
+                                    color: $Primary-color;
+                                }
+                            }
+
+                            .select_main {
+                                width: 200px;
+
+                                @media (max-width: 575px) {
+                                    width: auto;
+
+                                    .dd_header {
+                                        padding: 8px 16px 9px 16px;
+                                        line-height: 28px;
+                                    }
+
+                                    .dd_list_otr {
+                                        width: 200px;
+                                        right: 0;
+                                        left: auto;
+                                    }
+                                }
+
+                                .dd_list_otr {
+                                    height: 300px;
+                                    overflow-y: auto;
+
+                                    &::-webkit-scrollbar {
+                                        width: 4px;
+                                        height: 4px;
+                                    }
+
+                                    &::-webkit-scrollbar-track {
+                                        background: $White-color;
+                                    }
+
+                                    &::-webkit-scrollbar-thumb {
+                                        background: $Primary-color;
+                                        transition: .3s;
+                                    }
+
+                                    &::-webkit-scrollbar-thumb:hover {
+                                        background: $Secondary-color;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,164 @@
+@import '../../common-styles/variable.scss';
+
+.ReviewsCard_otr {
+    .review_card_inr {
+        display: flex;
+        align-items: center;
+        box-shadow: $Box-Shadow-custom;
+
+        @media (max-width: 992px) {
+            flex-direction: column;
+        }
+
+        .card_name {
+            background-color: $Secondary-color;
+            width: 320px;
+            height: 245px;
+            border-radius: 4px 0 0 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @media (max-width: 992px) {
+                width: 100%;
+                border-radius: 4px 4px 0 0;
+            }
+
+            .head_name {
+                color: $Primary-color;
+                text-align: center;
+            }
+        }
+
+        .rating_main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 36px 32px;
+
+            @media (max-width: 992px) {
+                width: 100%;
+            }
+
+            @media (max-width: 575px) {
+                flex-direction: column;
+            }
+
+            .feature_otr {
+                .feature_inr {
+                    display: flex;
+                    align-items: center;
+
+                    @media (max-width: 575px) {
+                        margin-bottom: 40px;
+                    }
+
+                    &:not(:last-child) {
+                        margin-bottom: 12px;
+                    }
+
+                    .img_otr {
+                        width: 24px;
+                        height: 24px;
+                        margin-right: 8px;
+
+                        .circle_img {
+                            width: 24px;
+                            height: 24px;
+                            margin-right: 8px;
+                        }
+                    }
+                }
+
+                .feature_desc {
+                    .desc_inr {
+                        color: $Gray-Shade-1;
+                    }
+                }
+            }
+
+            .rating_otr {
+                .rate {
+                    color: $Primary-color;
+
+                    .users {
+                        color: $Gray-Shade-2;
+                        position: relative;
+                        top: -3px;
+                    }
+                }
+
+                .stars_main {
+                    display: flex;
+                    align-items: center;
+                    padding: 10px 0 0 0;
+
+                    .star_li {
+                        &:not(:last-child) {
+                            margin-right: 10px;
+                        }
+
+                        .star {
+                            path {
+                                fill: $Secondary-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .starting_from {
+            .starting_from_inr {
+                width: 245px;
+                height: 245px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                border-left: 1px solid $Gray-Shade-2;
+
+                @media (max-width: 992px) {
+                    justify-content: baseline;
+                    width: 100%;
+                    border-top: 1px solid $Gray-Shade-2;
+                    border-left: 1px solid transparent;
+                }
+
+                .starting {
+                    color: $Gray-Shade-1;
+                }
+
+                .price {
+                    color: $Primary-color;
+                    margin: 0 0 16px 0;
+                }
+
+                .action {
+                    display: flex;
+                }
+            }
+        }
+    }
+}
+
+.ReviewsPage_main {
+    .review_main {
+        margin: 128px 0;
+
+        .container {
+            .heading {
+                text-align: center;
+                color: $Primary-color;
+                padding: 0 0 72px 0;
+            }
+
+            .ReviewsCard_otr {
+                &:not(:last-child) {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}

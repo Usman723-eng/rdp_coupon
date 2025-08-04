@@ -1,0 +1,29 @@
+@import '../../common-styles/variable.scss';
+
+.InnerHeader_main {
+    background-color: $Primary-color;
+
+    .container {
+        .page_link_otr {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 48px 0 56px 0;
+
+            .link_inner {
+                color: $White-color;
+
+                @media (max-width: 420px) {
+                    font-size: $font-size-S;
+                    line-height: $line-height-S;
+                    font-family: $font-family-Medium;
+                    font-weight: 500;
+                }
+            }
+
+            .icon {
+                margin: 6px 12px 0 12px;
+            }
+        }
+    }
+}

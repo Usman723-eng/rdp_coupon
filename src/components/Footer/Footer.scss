@@ -1,0 +1,135 @@
+@import '../../common-styles/variable.scss';
+
+.Footer_main {
+    padding: 128px 0;
+    background-color: $Primary-color;
+
+    .container {
+        .row_custom {
+            .nav_main_otr {
+                .nav_main_inr {
+                    @media (max-width: 575px) {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                        flex-direction: column;
+                    }
+
+                    .nav_head {
+                        color: $White-color;
+                    }
+
+                    .nav_ul {
+                        padding: 20px 0 0 0;
+
+                        .nav_li {
+                            &:not(:last-child) {
+                                margin-bottom: 8px;
+                            }
+
+                            .nav_a {
+                                color: #C3C3C3;
+                                display: inline;
+                                transition: .3s;
+
+                                &:hover {
+                                    color: $Secondary-color;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .nav1 {
+                    @media (max-width: 575px) {
+                        padding: 0 0 40px 0;
+                    }
+                }
+
+                .nav2 {
+                    @media (max-width: 992px) {
+                        padding: 0 0 40px 0;
+                    }
+                }
+
+                .nav3 {
+                    padding-left: 100px;
+
+                    @media (max-width: 992px) {
+                        padding: 0;
+                    }
+
+                    @media (max-width: 768px) {
+                        padding: 0 0 40px 0;
+                    }
+                }
+
+                .nav4 {
+                    padding-left: 30px;
+
+                    @media (max-width: 992px) {
+                        padding: 0;
+                    }
+
+                    @media (max-width: 575px) {
+                        padding: 0 0 40px 0;
+                    }
+                }
+
+                .nav5 {
+                    padding-left: 60px;
+
+                    @media (max-width: 992px) {
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.copy_main {
+    padding: 24px 0;
+    background-color: $Light-bg-color;
+
+    .container {
+        .copy_wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            @media (max-width: 768px) {
+                flex-direction: column;
+            }
+
+            .logo_inr {
+                .logo_img {
+                    width: 160px;
+                    object-fit: contain;
+                    object-position: left;
+                }
+            }
+
+            .copy_text_otr {
+                @media (max-width: 768px) {
+                    margin: 24px 0;
+                }
+
+                .copy_text {
+                    color: $Light-text-color;
+
+                    @media (max-width: 768px) {
+                        text-align: center;
+                    }
+
+                    .brand {
+                        display: inline;
+                        color: $Secondary-color;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}

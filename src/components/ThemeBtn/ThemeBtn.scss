@@ -1,0 +1,34 @@
+@import '../../common-styles/variable.scss';
+
+.btn_fill {
+    padding: 9px 24px 11px 24px;
+    background-color: $Secondary-color;
+    color: $Primary-color;
+    font-size: $font-size-SB;
+    line-height: $line-height-SB;
+    font-family: $font-family-Bold;
+    border-radius: 4px;
+    transition: .3s;
+
+    &:hover {
+        background-color: $Primary-color;
+        color: $Secondary-color;
+    }
+}
+
+.btn_outline {
+    padding: 9px 24px 11px 24px;
+    background-color: transparent;
+    border: 1px solid $Secondary-color;
+    color: $White-color;
+    font-size: $font-size-SB;
+    line-height: $line-height-SB;
+    font-family: $font-family-Bold;
+    border-radius: 4px;
+    transition: .3s;
+
+    &:hover {
+        background-color: $Secondary-color;
+        color: $Primary-color;
+    }
+}

@@ -1,0 +1,77 @@
+@import '../../common-styles/variable.scss';
+
+.AboutPage_main {
+    .aboutSection_main {
+        margin: 128px 0;
+
+        .container {
+            .row_custom_heading {
+                margin: 0 0 48px 0;
+
+                .col_heading_otr {
+                    .col_heading_inr {
+                        padding: 0 100px 0 0;
+
+                        @media (max-width: 992px) {
+                            padding: 0;
+                        }
+
+                        .heading {
+                            color: $Primary-color;
+
+                            @media (max-width: 420px) {
+                                font-size: $font-size-h3;
+                                line-height: $line-height-h3;
+                                font-family: $font-family-Bold;
+                            }
+                        }
+                    }
+                }
+
+                .col_2k_otr {
+                    .col_2k_inr {
+                        .heading_2k {
+                            color: $Secondary-color;
+                            margin-bottom: 8px;
+                        }
+
+                        .desc {
+                            color: $Gray-Shade-1;
+
+                            @media (max-width: 1200px) {
+                                br {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+
+                    .margin {
+                        @media (max-width: 992px) {
+                            margin: 24px 0 24px 0;
+                        }
+                    }
+                }
+            }
+
+            .row_content_otr {
+                justify-content: space-between;
+                padding: 0 15px;
+
+                .col_text_otr {
+                    @media (max-width: 992px) {
+                        &:not(:last-child) {
+                            margin-bottom: 24px;
+                        }
+                    }
+
+                    .col_text_inr {
+                        .desc_1 {
+                            color: $Gray-Shade-1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

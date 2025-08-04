@@ -1,0 +1,168 @@
+@import '../../common-styles/variable.scss';
+
+.ContactSection_main {
+    margin: 128px 0;
+
+    .container {
+        .row_contact {
+            align-items: center;
+
+            .col_img_otr {
+                .col_img_inr {
+                    padding: 0 42px 0 0;
+
+                    @media (max-width: 992px) {
+                        padding: 0 0 72px 0;
+                    }
+
+                    .contact_img {
+                        width: 100%;
+                        height: auto;
+                        object-fit: cover;
+                    }
+                }
+            }
+
+            .col_form_otr {
+                .col_form_inr {
+                    .heading {
+                        color: $Primary-color;
+                    }
+
+                    .desc {
+                        color: $Gray-Shade-1;
+                        margin: 16px 0 36px 0;
+                    }
+
+                    .form_main {
+                        width: 100%;
+
+                        .input_main {
+                            display: flex;
+                            align-items: center;
+                            gap: 30px;
+                            width: 100%;
+
+                            @media (max-width: 420px) {
+                                flex-direction: column;
+                                gap: 24px;
+                            }
+
+                            .input_otr {
+                                width: 50%;
+
+                                @media (max-width: 420px) {
+                                    width: 100%;
+                                }
+
+                                .White_Input {
+                                    width: 100%;
+                                }
+                            }
+                        }
+
+                        .textarea {
+                            appearance: none;
+                            resize: none;
+                            outline: none;
+                            width: 100%;
+                            height: 150px;
+                            margin: 30px 0;
+                        }
+
+                        .action_otr {
+                            width: calc(50% - 15px);
+
+                            .btn_fill {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.social_main {
+    margin: 128px 0;
+
+    .container {
+        .wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #F3F3F3;
+            padding: 32px 40px;
+
+            @media (max-width: 992px) {
+                flex-direction: column;
+            }
+
+            .desc {
+                color: $Primary-color;
+
+                @media (max-width: 992px) {
+                    margin: 0 0 24px 0;
+                }
+
+                @media (max-width: 420px) {
+                    text-align: center;
+                }
+            }
+
+            .btn_main {
+                .btn_otr {
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+
+                    @media (max-width: 420px) {
+                        flex-direction: column;
+                    }
+
+                    .btn_inr {
+                        &:not(:last-child) {
+                            margin-right: 20px;
+                        }
+
+                        .social_linkk {
+                            padding: 3px 16px;
+                            border: 1px solid $Secondary-color;
+                            color: $Gray-Shade-1;
+                            border-radius: 4px;
+
+                            &:hover {
+                                background-color: $Secondary-color;
+                                color: $Primary-color;
+                            }
+                        }
+                    }
+
+                    .btn3 {
+                        @media (max-width: 768px) {
+                            margin-right: 0;
+                        }
+                    }
+
+                    .btn1,
+                    .btn2,
+                    .btn3,
+                    .btn4 {
+                        @media (max-width: 420px) {
+                            margin: 0 0 20px 0;
+                        }
+                    }
+
+                    .btn1,
+                    .btn2,
+                    .btn3 {
+                        @media (max-width: 768px) {
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

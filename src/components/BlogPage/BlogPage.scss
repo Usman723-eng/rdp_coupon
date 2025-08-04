@@ -1,0 +1,476 @@
+@import '../../common-styles/variable.scss';
+
+.BlogCard_inr {
+    border-radius: 4px 4px 0 0;
+
+    .blog_img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .content {
+        background-color: $White-color;
+        padding: 24px 32px 36px 32px;
+        box-shadow: $Box-Shadow-custom;
+
+        .desc {
+            color: $Gray-Shade-1;
+            margin: 0 0 12px 0;
+
+            .desc_inr {
+                color: $Gray-Shade-2;
+            }
+        }
+
+        .card_heading {
+            color: $Primary-color;
+            margin: 0;
+        }
+
+        .desc_1 {
+            color: $Gray-Shade-1;
+            margin: 16px 0 28px 0;
+        }
+
+        .action {
+            display: flex;
+
+            .btn_read {
+                width: 100%;
+                color: $Primary-color;
+            }
+        }
+    }
+}
+
+.BlogPage_main {
+    .blogSection_main {
+        margin: 128px 0;
+
+        .container {
+            .blog_row {
+                .col_blog_otr {
+                    .col_blog_inr {
+                        @media (max-width: 992px) {
+                            margin: 0 0 72px 0;
+                        }
+
+                        .heading {
+                            color: $Primary-color;
+                            margin: 0 0 72px 0;
+                            transition: .3s;
+
+                            &:hover {
+                                color: $Secondary-color !important;
+                            }
+                        }
+
+                        .row_post {
+                            .col_box_otr {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 30px;
+                            }
+                        }
+
+                        .btn_otr {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin: 80px 0 0 0;
+
+                            .action {
+                                width: 40%;
+                                text-align: center;
+
+                                @media (max-width: 420px) {
+                                    width: 100%;
+                                }
+
+                                .btn_load {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.CommentCard_otr {
+    padding: 28px 20px 28px 28px;
+    border-radius: 4px;
+    border: 1px solid $Light-text-color;
+
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    .profile_otr {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 0 16px 0 !important;
+
+        @media (max-width: 768px) {
+            flex-direction: row;
+        }
+
+        @media (max-width: 420px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .profile_inr {
+            display: flex;
+            align-items: center;
+
+            @media (max-width: 420px) {
+                margin: 0 0 16px 0;
+            }
+
+            .profile_img {
+                margin: 0 12px 0 0;
+            }
+
+            .name {
+                color: $Gray-Shade-1;
+
+                .name_inr {
+                    color: $Gray-Shade-2;
+                    margin: 0 0 0 12px;
+                }
+            }
+        }
+
+        .btn_stores {
+            color: $Gray-Shade-1;
+            padding: 3px 16px 5px 16px;
+            border-radius: 4px;
+            border: 1px solid $Secondary-color;
+
+
+            &:not(:last-child) {
+                margin-right: 24px;
+            }
+
+            &:hover {
+                background-color: $Secondary-color;
+                color: $Primary-color;
+            }
+        }
+    }
+
+    .desc {
+        color: $Gray-Shade-1;
+    }
+}
+
+.BlogDetails_main {
+    .BlogDetail_Section {
+        margin: 128px 0;
+
+        .container {
+            .blog_detail {
+                .col_detail_otr {
+                    .col_detail_inr {
+                        .heading {
+                            color: $Primary-color;
+
+                            @media (max-width: 320px) {
+                                font-size: $font-size-h3;
+                                line-height: $line-height-h3;
+                                font-family: $font-family-Bold;
+                            }
+                        }
+
+                        .profile_otr {
+                            display: flex;
+                            align-items: center;
+                            margin: 36px 0 48px 0;
+
+                            @media (max-width: 768px) {
+                                flex-direction: column;
+                                align-items: flex-start;
+                            }
+
+                            .profile_img {
+                                width: 52px;
+                            }
+
+                            .name {
+                                color: $Gray-Shade-1;
+                                margin: 0 24px 0 12px;
+
+                                @media (max-width: 768px) {
+                                    margin: 16px 0;
+                                }
+                            }
+
+                            .shopping_otr {
+                                display: flex;
+                                align-items: center;
+                                padding: 9px 24px 11px 24px;
+                                border: 1px solid $Light-text-color;
+                                border-radius: 4px;
+
+                                @media (max-width: 420px) {
+                                    flex-direction: column;
+                                    align-items: flex-start;
+                                }
+
+                                .desc_1 {
+                                    color: $Gray-Shade-1;
+                                    margin: 0;
+
+                                    @media (max-width: 420px) {
+                                        &:not(:last-child) {
+                                            margin: 0 0 8px 0;
+                                        }
+                                    }
+                                }
+
+                                .dot {
+                                    width: 8px;
+                                    height: 8px;
+                                    border-radius: 100%;
+                                    background-color: $Gray-Shade-2;
+                                    margin: 0 12px;
+
+                                    @media (max-width: 420px) {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+
+                        .img {
+                            width: 100%;
+                        }
+
+                        .desc_1 {
+                            margin: 40px 0 16px 0;
+                        }
+
+                        .desc {
+                            color: $Gray-Shade-1;
+                        }
+
+                        .head {
+                            color: $Primary-color;
+                            margin: 28px 0 16px 0;
+                        }
+
+                        .desc_5 {
+                            margin: 16px 0;
+                        }
+
+                        .post_otr {
+                            padding: 24px 0;
+                            border-top: 1px solid $Light-text-color;
+                            border-bottom: 1px solid $Light-text-color;
+                            margin: 48px 0 72px 0;
+
+                            .post_inr {
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                border-bottom: 1px solid $Light-text-color;
+                                padding: 0 0 32px 0;
+                                margin: 0 0 24px 0;
+
+                                @media (max-width: 420px) {
+                                    flex-direction: column;
+                                    align-items: flex-start;
+                                }
+
+                                .previous_post {
+                                    @media (max-width: 420px) {
+                                        margin: 0 0 24px 0;
+                                    }
+
+                                    .desc_1 {
+                                        color: $Primary-color;
+                                        margin: 0 0 4px 0;
+                                    }
+
+                                    .desc_2 {
+                                        color: $Gray-Shade-1;
+
+                                        @media (max-width: 768px) {
+                                            br {
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .next_post {
+                                    text-align: end;
+
+                                    @media (max-width: 420px) {
+                                        text-align: start;
+                                    }
+
+                                    .desc_1 {
+                                        color: $Primary-color;
+                                        margin: 0 0 4px 0;
+                                    }
+
+                                    .desc_2 {
+                                        color: $Gray-Shade-1;
+
+                                        @media (max-width: 768px) {
+                                            br {
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .btn_otr {
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+
+                                @media (max-width: 420px) {
+                                    flex-direction: column;
+                                    align-items: flex-start;
+                                }
+
+                                .btn_inr {
+                                    display: flex;
+                                    align-items: center;
+
+                                    @media (max-width: 420px) {
+                                        margin: 0 0 24px 0;
+                                    }
+
+                                    .btn_stores {
+                                        color: $Gray-Shade-1;
+                                        padding: 3px 16px 5px 16px;
+                                        border-radius: 4px;
+                                        border: 1px solid $Secondary-color;
+
+                                        &:not(:last-child) {
+                                            margin-right: 24px;
+                                        }
+
+                                        &:hover {
+                                            background-color: $Secondary-color;
+                                            color: $Primary-color;
+                                        }
+                                    }
+                                }
+
+                                .icon_inr {
+                                    display: flex;
+                                    align-items: center;
+
+                                    .icon {
+                                        &:not(:last-child) {
+                                            margin-right: 24px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .recent_comment {
+                            .heading {
+                                color: $Primary-color;
+                                margin: 0 0 36px 0;
+                            }
+
+                            .CommentCard_otr {
+                                &:nth-child(4) {
+                                    margin-left: 30px;
+
+                                    @media (max-width: 420px) {
+                                        margin: 0;
+                                    }
+                                }
+                            }
+                        }
+
+                        .leave_comment {
+                            .heading {
+                                margin: 72px 0 36px 0;
+                            }
+
+                            .form_main {
+                                width: 100%;
+
+                                @media (max-width: 992px) {
+                                    margin: 0 0 72px 0;
+                                }
+
+                                .input_main {
+                                    display: flex;
+                                    align-items: center;
+                                    width: 100%;
+
+                                    @media (max-width: 420px) {
+                                        flex-direction: column;
+                                    }
+
+                                    .input_otr {
+                                        width: 50%;
+
+                                        @media (max-width: 420px) {
+                                            width: 100%;
+                                        }
+
+                                        &:not(:last-child) {
+                                            margin: 0 30px 0 0;
+
+                                            @media (max-width: 420px) {
+                                                margin: 0 0 24px 0;
+                                            }
+                                        }
+
+                                        .White_Input {
+                                            width: 100%;
+                                            margin: 0;
+                                        }
+                                    }
+                                }
+
+                                .White_Input {
+                                    width: 100%;
+                                    margin: 30px 0 0 0;
+                                }
+
+                                .textarea {
+                                    appearance: none;
+                                    resize: none;
+                                    outline: none;
+                                    width: 100%;
+                                    height: 130px;
+                                    margin: 30px 0;
+                                }
+
+                                .action {
+                                    width: 50%;
+                                    text-align: center;
+
+                                    @media (max-width: 420px) {
+                                        width: 100%;
+                                    }
+
+                                    .btn_comment {
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
