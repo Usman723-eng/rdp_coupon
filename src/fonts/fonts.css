@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'BeVietnam-Medium';
+    src: url('./BeVietnam-Medium.eot');
+    src: url('./BeVietnam-Medium.eot?#iefix') format('embedded-opentype'),
+        url('./BeVietnam-Medium.otf') format('otf'),
+        url('./BeVietnam-Medium.svg#BeVietnam-Medium') format('svg'),
+        url('./BeVietnam-Medium.ttf') format('truetype'),
+        url('./BeVietnam-Medium.woff') format('woff'),
+        url('./BeVietnam-Medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'BeVietnam-Bold';
+    src: url('./BeVietnam-Bold.eot');
+    src: url('./BeVietnam-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./BeVietnam-Bold.otf') format('otf'),
+        url('./BeVietnam-Bold.svg#BeVietnam-Bold') format('svg'),
+        url('./BeVietnam-Bold.ttf') format('truetype'),
+        url('./BeVietnam-Bold.woff') format('woff'),
+        url('./BeVietnam-Bold.woff2') format('woff2');
+}
