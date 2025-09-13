@@ -2,6 +2,98 @@ const DealsData = [
     {
         offText: "10% Off",
         rdpName: "PCRDP",
+        cardTitle: "PCRDP Premium RDP Services - Professional Cloud Hosting 10% Off",
+        verifyText: "Verified Yesterday",
+        usesText: "32 Uses Today",
+        BoxDesc: "Get PCRDP business RDP with high-speed connectivity, dedicated servers, and secure remote access. Affordable plans make it one of the best RDP in Pakistan.",
+        btnLink: "https://pcrdp.com/",
+        modalDesc: "Apply this code at checkout:",
+        modalCode: "PCRDP10SAVE"
+    },
+    {
+        offText: "10% Off",
+        rdpName: "BuyRDPLive",
+        cardTitle: "BuyRDPLive Premium Services - High-Performance RDP with 24/7 Support 10% Off",
+        verifyText: "Verified Yesterday",
+        usesText: "28 Uses Today",
+        BoxDesc: "Enjoy BuyRDPLive hosting with instant setup and SSD servers. Secure connections for gaming, streaming, and fast RDP with JazzCash payment support.",
+        btnLink: "https://www.buyrdplive.com/",
+        modalDesc: "Use this code at checkout:",
+        modalCode: "LIVE10OFF"
+    },
+    {
+        offText: "10% Off",
+        rdpName: "99RDP",
+        cardTitle: "99RDP Hosting Plans - Smooth RDP Experience with Global Locations 10% Off",
+        verifyText: "Verified Yesterday",
+        usesText: "48 Uses Today",
+        BoxDesc: "99RDP offers VPS hosting with unlimited bandwidth, Windows 11 support, and secure resources. Known for cheap RDP price in Pakistan with strong performance.",
+        btnLink: "https://99rdp.com/",
+        modalDesc: "Use this code during checkout on 99RDP:",
+        modalCode: "99RDP10"
+    },
+    {
+        offText: "10% Off",
+        rdpName: "AmazingRDP",
+        cardTitle: "Amazing RDP Fast Solutions - Secure Remote Desktop Hosting 10% Off",
+        verifyText: "Verified Yesterday",
+        usesText: "34 Uses Today",
+        BoxDesc: "AmazingRDP provides SSL-secured cloud servers with enterprise hosting. A trusted choice for dedicated RDP and performance-focused users.",
+        btnLink: "https://amazingrdp.com/",
+        modalDesc: "Apply this code during checkout:",
+        modalCode: "AMAZING10"
+    },
+    {
+        offText: "10% Off",
+        rdpName: "EurRDP",
+        cardTitle: "EurRDP European Hosting - GDPR Compliant EU Servers 10% Off",
+        verifyText: "Verified Yesterday",
+        usesText: "29 Uses Today",
+        BoxDesc: "EurRDP offers low-latency Germany, Netherlands, and UK servers. GDPR compliant, fast RDP solutions with multilingual support for global users.",
+        btnLink: "https://eurrdp.com/",
+        modalDesc: "Use this code at checkout:",
+        modalCode: "EURRDP10"
+    },
+    {
+        offText: "10% Off",
+        rdpName: "HomeRDP",
+        cardTitle: "HomeRDP Personal Use - Reliable Remote Work Solutions 10% Off",
+        verifyText: "Verified Yesterday",
+        usesText: "20 Uses Today",
+        BoxDesc: "HomeRDP is perfect for home office and remote work. Affordable and easy setup makes it one of the cheapest RDP in Pakistan.",
+        btnLink: "https://homerdp.com/",
+        modalDesc: "Paste this code during checkout:",
+        modalCode: "HOMERDP10"
+    },
+    {
+        offText: "10% Off",
+        rdpName: "GORDP",
+        cardTitle: "GORDP Global Hosting - High-Performance VPS Worldwide 10% Off",
+        verifyText: "Verified Yesterday",
+        usesText: "18 Uses Today",
+        BoxDesc: "GORDP delivers enterprise-grade VPS with global servers. Recognized among RDP Wale providers for secure, scalable hosting worldwide.",
+        btnLink: "https://gordp.com/",
+        modalDesc: "Enter this on GORDP checkout:",
+        modalCode: "GORDP10"
+    },
+    {
+        offText: "10% Off",
+        rdpName: "RDPDatabase",
+        cardTitle: "RDPDatabase Secure Hosting - Enterprise RDP with Managed Services 10% Off",
+        verifyText: "Verified Yesterday",
+        usesText: "15 Uses Today",
+        BoxDesc: "RDPDatabase provides cloud servers with backup and monitoring. Popular for managed services, trusted like Sandeep RDP in enterprise setups.",
+        btnLink: "https://rdpdatabase.com/",
+        modalDesc: "Use this code on checkout page:",
+        modalCode: "RDPDATABASE10"
+    },
+
+
+
+
+    {
+        offText: "10% Off",
+        rdpName: "PCRDP",
         cardTitle: "Save 10% on PCRDP Premium RDP Services",
         verifyText: "Verified Yesterday",
         usesText: "32 Uses Today",
@@ -10,7 +102,6 @@ const DealsData = [
         modalDesc: "Apply this code at checkout:",
         modalCode: "PCRDP10SAVE",
     },
-    // PCRDP 20% Deal
     {
         offText: "20% Off",
         rdpName: "PCRDP",
@@ -22,7 +113,6 @@ const DealsData = [
         modalDesc: "Enter this code during checkout:",
         modalCode: "PCRDP20DEAL",
     },
-    // buyrdplive 10% Deal
     {
         offText: "10% Off",
         rdpName: "buyrdplive",
@@ -34,7 +124,6 @@ const DealsData = [
         modalDesc: "Use this code at checkout:",
         modalCode: "LIVE10OFF",
     },
-    // buyrdplive 20% Deal
     {
         offText: "20% Off",
         rdpName: "buyrdplive",
@@ -200,10 +289,6 @@ const DealsData = [
         modalDesc: "Use this code at checkout:",
         modalCode: "PCRDP2025",
     },
-
-
-
-
     {
         offText: "50% Off",
         rdpName: "99RDP",
